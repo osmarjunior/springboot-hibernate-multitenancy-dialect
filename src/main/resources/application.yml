@@ -1,0 +1,15 @@
+multitenancy:
+  products:
+    dataSources:
+      -
+        tenantId: tenant_1
+        url: jdbc:oracle:thin:@localhost:1521:BCTST11G
+        username: user
+        password: pass
+        driverClassName: oracle.jdbc.OracleDriver
+      -
+        tenantId: tenant_2
+        url: jdbc:sqlserver://localhost:1433;databaseName=product;
+        username: user
+        password: pass
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
